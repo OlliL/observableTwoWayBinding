@@ -1,3 +1,8 @@
-<h1>
-  {{title}}
-</h1>
+<h1>with form</h1>
+<form>
+<div *ngFor="let m of model"><input name="value" id="1" [(ngModel)]="m.value"></div>
+</form>
+
+
+<h1>without form</h1>
+<div *ngFor="let m of model"><input name="value" id="2" [(ngModel)]="m.value"></div>
